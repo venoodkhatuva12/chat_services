@@ -1,0 +1,19 @@
+---
+- name: Create {{app_group}} group
+  become: true
+  group: name={{app_group}}
+
+- name: Create {{app_user}} user
+  become: true
+  user: name={{app_user}} group={{app_group}} createhome=yes home=/opt/{{app_user}}/ shell=/sbin/nologin state=present
+
+- name: Create {{app_group}} root directory
+  become: true
+  file: path=/opt/{{app_group}}/ mode="u=rwx,g=rwx,o=rwx" owner={{app_user}} group={{app_group}} state=directory
+
+- name: Create {{app_group}} directories
+  become: true
+  file: path=/opt/{{app_group}}/{{item}} mode="u=rwx,g=rwx,o=rwx" owner={{app_user}} group={{app_group}} state=directory
+  with_items:
+    - tmp/
+    - apollomq_1.7.1

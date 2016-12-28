@@ -1,0 +1,9 @@
+
+mqtt_user: admin
+mqtt_password: password
+mqtt_host: localhost
+mqtt_root_topic: affinitas_chat/one_to_one
+
+keystore_path: /opt/affinitas_chat/apollomq_1.7.1/chat.elitesingles.com/etc/keystore
+keystore_password: password
+keystore_store_password: password

@@ -1,0 +1,7 @@
+---
+oracle_java_version: 8
+oracle_java_cache_valid_time: 3600
+oracle_java_home: "/usr/lib/jvm/java-{{ oracle_java_version }}-oracle"
+oracle_java_os_supported: yes
+oracle_java_state: latest
+oracle_java_set_as_default: yes

@@ -1,0 +1,56 @@
+---
+
+- name: Check archive file for message queue exists
+  become: true
+  become_user: "{{ app_user }}"
+  stat: path=/opt/affinitas_chat/tmp/apache-apollo-1.7.1-unix-distro.tar.gz
+  register: archive_file_for_message_queue_exists
+
+- name: download message queue if not exists
+  when: not archive_file_for_message_queue_exists.stat.exists
+  become: true
+  become_user: "{{ app_user }}"
+  get_url:
+    url: http://mirror.wanxp.id/apache/activemq/activemq-apollo/1.7.1/apache-apollo-1.7.1-unix-distro.tar.gz
+    #http://apache.mirror.anlx.net/activemq/activemq-apollo/1.7.1/apache-apollo-1.7.1-unix-distro.tar.gz
+    dest: /opt/affinitas_chat/tmp/apache-apollo-1.7.1-unix-distro.tar.gz
+  tags:
+    - download_files
+
+- name: deploy message queue
+  become: true
+  become_user: "{{ app_user }}"
+  unarchive: src=/opt/affinitas_chat/tmp/apache-apollo-1.7.1-unix-distro.tar.gz dest=/opt/affinitas_chat/apollomq_1.7.1 remote_src=yes
+
+- name: generate message queue config
+  become: true
+  become_user: "{{ app_user }}"
+  command: /opt/affinitas_chat/apollomq_1.7.1/apache-apollo-1.7.1/bin/apollo create chat.elitesingles.com
+  args:
+    chdir: /opt/affinitas_chat/apollomq_1.7.1/
+
+- name: generate apollo.xml config file from template
+  become: true
+  template: src=roles/message_queue/templates/apollo.xml.j2 dest=/opt/affinitas_chat/apollomq_1.7.1/chat.elitesingles.com/etc/apollo.xml owner={{app_user}} group={{app_group}} force=true mode="u=rwx,g=rwx,o=rwx"
+
+- include: roles/keystore/tasks/main.yml
+
+- name: check if message queue is stopped
+  become: true
+  become_user: "{{ app_user }}"
+  command: /opt/affinitas_chat/apollomq_1.7.1/chat.elitesingles.com/bin/apollo-broker-service status
+  register: message_queue_status
+  ignore_errors: true
+  changed_when: false
+  failed_when: ("apollo-broker-service is" not in message_queue_status.stdout)
+
+- name: stop message queue if running
+  become: true
+  become_user: "{{ app_user }}"
+  command: /opt/affinitas_chat/apollomq_1.7.1/chat.elitesingles.com/bin/apollo-broker-service stop
+  when: ("apollo-broker-service is running" in message_queue_status.stdout)
+
+- name: start message queue if stopped
+  become: true
+  become_user: "{{ app_user }}"
+  command: /opt/affinitas_chat/apollomq_1.7.1/chat.elitesingles.com/bin/apollo-broker-service start

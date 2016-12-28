@@ -1,0 +1,1 @@
+ansible-playbook -i local/hosts.ini install.yml -vv

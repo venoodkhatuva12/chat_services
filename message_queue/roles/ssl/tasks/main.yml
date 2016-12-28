@@ -1,0 +1,35 @@
+---
+  - name: Ensure OpenSSL is installed
+    apt: name=openssl state=present
+    when: ansible_os_family == "Debian"
+    tags: [ssl-certs,packages]
+
+  - name: Ensure ssl folder exist
+    become: true
+    file:
+      path: "{{ ssl_certs_path }}"
+      state: directory
+      owner: "{{ ssl_certs_path_owner }}"
+      group: "{{ ssl_certs_path_group }}"
+      mode: "{{ ssl_certs_mode }}"
+    tags: [ssl-certs,configuration]
+
+  - name: Copy SSL certificates
+    become: true
+    copy:
+      src: "{{ item.src }}"
+      dest: "{{ item.dest }}"
+      owner: "{{ ssl_certs_path_owner }}"
+      group: "{{ ssl_certs_path_group }}"
+      mode: "{{ ssl_certs_mode }}"
+    with_items:
+      - { src: "{{ ssl_certs_local_cert_path }}", dest: "{{ ssl_certs_cert_path }}" }
+      - { src: "{{ ssl_certs_local_privkey_path }}", dest: "{{ ssl_certs_privkey_path }}" }
+    no_log: true
+    tags: [ssl-certs,configuration]
+
+#  - name: Generate strong DHE parameter - https://weakdh.org/
+#    become: true
+#    command: openssl dhparam -out {{ssl_certs_dhparam_path}} {{ssl_certs_dhparam_size}} creates={{ssl_certs_dhparam_path}}
+#    when: ssl_certs_generate_dh_param
+#    tags: [ssl-certs,configuration]

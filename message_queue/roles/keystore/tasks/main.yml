@@ -1,0 +1,29 @@
+---
+
+- name: Check if keystore already exists
+  become: true
+  stat: path={{ keystore_path }}
+  register: keystore_file_for_message_queue_exists
+
+- name: delete keystore
+  become: true
+  file: path={{ keystore_path }} state=absent
+  when: keystore_file_for_message_queue_exists.stat.exists
+
+#- name: remove alias in keystore if file already exists
+#  become: true
+#  command: keytool -delete -alias {{ ssl_certs_common_name }} -keystore {{ keystore_path }} -storepass {{ keystore_store_password }}
+#  when: keystore_file_for_message_queue_exists.stat.exists
+
+- name: make pkcs12 from crt file in order to import into the java keystore
+  become: true
+  command: openssl pkcs12 -export -in {{ ssl_certs_cert_path }} -inkey {{ ssl_certs_privkey_path }} -out {{ssl_certs_path}}/{{ ssl_certs_common_name }}.p12 -name {{ ssl_certs_common_name }} -CAfile ca.crt -caname root -passout pass:tmp
+
+- name: Convert the pkcs12 file to a java keystore
+  become: true
+  command: keytool -importkeystore -deststorepass {{ keystore_store_password }} -destkeypass  {{ keystore_password }} -destkeystore {{ keystore_path }} -srckeystore {{ssl_certs_path}}/{{ ssl_certs_common_name }}.p12 -srcstoretype PKCS12 -srcstorepass tmp -alias {{ ssl_certs_common_name }}
+
+- name: delete the pkcs12 file
+  become: true
+  file: path={{ssl_certs_path}}/{{ ssl_certs_common_name }}.p12 state=absent
+
