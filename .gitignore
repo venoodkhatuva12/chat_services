@@ -1,0 +1,4 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.class
+accept_message_service/target/*
+broadcast_message_sse_app/target/*
