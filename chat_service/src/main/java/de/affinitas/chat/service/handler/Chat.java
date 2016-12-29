@@ -1,7 +1,7 @@
-package de.affinitas.chat.handler;
+package de.affinitas.chat.service.handler;
 
 import com.eclipsesource.json.JsonObject;
-import de.affinitas.chat.listener.BroadcastChatListener;
+import de.affinitas.chat.service.listener.BroadcastChatListener;
 import de.affinitas.chat.messagequeue.ConnectionNotEstablished;
 
 import javax.ws.rs.POST;
@@ -41,7 +41,7 @@ public class Chat {
         JsonObject reply = new JsonObject();
         return reply
                 .set("id", messageId)
-                .set("userId",userId)
+                .set("userId", userId)
                 .set("message", message)
                .toString();
     }

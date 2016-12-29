@@ -1,7 +1,7 @@
-package de.affinitas.chat;
+package de.affinitas.chat.service;
 
-import de.affinitas.chat.handler.Chat;
-import de.affinitas.chat.listener.BroadcastChatListener;
+import de.affinitas.chat.service.handler.Chat;
+import de.affinitas.chat.service.listener.BroadcastChatListener;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -10,7 +10,7 @@ import org.glassfish.jersey.servlet.ServletContainer;
 public class ChatService {
 
     public static void main(String[] args) throws Exception {
-
+        //TODO: add monitoring to app
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
         context.addEventListener(new BroadcastChatListener());

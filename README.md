@@ -50,6 +50,8 @@ We need to get the code to live in a healthy, repeatable way.  There are a numbe
  - the message queue isn't really setup for a production release
     - also in ansible, the certs are being checked in
  - Config is hardcoded in each service.
+ - no proper logging (only sysout-ing right now)
+ - monitoring not thought about
  - Tests are minimal
  - no security, or login integrated
 And a few more things in there.

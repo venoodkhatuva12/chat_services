@@ -10,18 +10,17 @@ import java.time.Duration;
 
 import static java.time.temporal.ChronoUnit.MINUTES;
 
-public class ServerSentEventService {
+public class ChatBroadcastSSEService {
 
     private final Server webServer;
 
     public static void main(String... args) throws Exception {
         ServerSentEventConfig config = new SSEConfig();
-        ServerSentEventService service = new ServerSentEventService(config);
+        ChatBroadcastSSEService service = new ChatBroadcastSSEService(config);
         service.start();
     }
 
-
-    public ServerSentEventService(ServerSentEventConfig config) throws Exception {
+    public ChatBroadcastSSEService(ServerSentEventConfig config) throws Exception {
 
         QueuesRegistry registry = new QueuesToManyStreamsRegistry(config);
 

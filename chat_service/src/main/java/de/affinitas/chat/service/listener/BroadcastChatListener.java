@@ -1,6 +1,6 @@
-package de.affinitas.chat.listener;
+package de.affinitas.chat.service.listener;
 
-import de.affinitas.chat.ChatConfig;
+import de.affinitas.chat.service.ChatConfig;
 import de.affinitas.chat.messagequeue.Broadcaster;
 import de.affinitas.chat.messagequeue.ConnectionNotEstablished;
 
@@ -37,16 +37,11 @@ public class BroadcastChatListener implements ServletContextListener {
     }
 
     private static Broadcaster makeBroadcasterIfNotExists(UUID channelId) throws IllegalArgumentException {
-        checkChannelIdValid(channelId);
         Broadcaster broadcaster = REGISTRY.get(channelId);
         if(broadcaster==null) {
             broadcaster = new Broadcaster(channelId, config);
             REGISTRY.put(channelId, broadcaster);
         }
         return broadcaster;
-    }
-
-    private static void checkChannelIdValid(UUID channelId) throws IllegalArgumentException {
-        //check service to see if channel is valid.  Implemented later
     }
 }

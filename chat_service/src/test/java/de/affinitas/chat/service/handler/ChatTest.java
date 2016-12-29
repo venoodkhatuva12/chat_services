@@ -1,4 +1,4 @@
-package de.affinitas.chat.handler;
+package de.affinitas.chat.service.handler;
 
 import com.eclipsesource.json.Json;
 import com.eclipsesource.json.JsonObject;

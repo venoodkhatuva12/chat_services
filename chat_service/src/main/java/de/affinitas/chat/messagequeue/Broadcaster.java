@@ -1,7 +1,7 @@
 package de.affinitas.chat.messagequeue;
 
 
-import de.affinitas.chat.ChatConfig;
+import de.affinitas.chat.service.ChatConfig;
 import org.fusesource.mqtt.client.Callback;
 import org.fusesource.mqtt.client.CallbackConnection;
 import org.fusesource.mqtt.client.MQTT;

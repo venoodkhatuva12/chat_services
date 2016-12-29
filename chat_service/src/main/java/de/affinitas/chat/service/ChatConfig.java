@@ -1,4 +1,4 @@
-package de.affinitas.chat;
+package de.affinitas.chat.service;
 
 public class ChatConfig {
 
