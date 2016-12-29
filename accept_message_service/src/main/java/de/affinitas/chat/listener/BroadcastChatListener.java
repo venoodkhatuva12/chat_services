@@ -33,7 +33,6 @@ public class BroadcastChatListener implements ServletContextListener {
     public static void broadcast(UUID channelId, String message) throws IllegalArgumentException, ConnectionNotEstablished {
         System.out.println("Attempting to broadcast message \""+message+"\" on channel: "+channelId.toString());
         Broadcaster broadcaster = makeBroadcasterIfNotExists(channelId);
-
         broadcaster.broadcast(message);
     }
 

@@ -45,5 +45,6 @@
     <orderEntry type="library" name="Maven: org.fusesource.hawtdispatch:hawtdispatch-transport:1.22" level="project" />
     <orderEntry type="library" name="Maven: org.fusesource.hawtdispatch:hawtdispatch:1.22" level="project" />
     <orderEntry type="library" name="Maven: org.fusesource.hawtbuf:hawtbuf:1.11" level="project" />
+    <orderEntry type="library" name="Maven: com.eclipsesource.minimal-json:minimal-json:0.9.4" level="project" />
   </component>
 </module>
