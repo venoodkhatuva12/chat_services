@@ -61,7 +61,7 @@ var ChatController = (function () {
             $chatMessages = $("#" + chatMessages);
             $chatBox = $("#" + chatBox);
             $chatButton = $("#" + chatButton);
-            attachControllerEventToInput($chatButton);
+            attachControllerEventToInput($chatBox, $chatButton);
         };
 
         function chatBoxValue() {
@@ -98,7 +98,6 @@ var ChatController = (function () {
             drawMessageInContainer(JSON.parse(message));
         };
         return client;
-
     };
 
     function postPayload(payload) {
@@ -115,11 +114,19 @@ var ChatController = (function () {
             });
     }
 
-    var attachControllerEventToInput = function ($chatButton) {
-        $chatButton.on("click", function (e) {
+    var attachControllerEventToInput = function ($chatBox, $chatButton) {
+
+        function sendPayload() {
             var payload = ChatView.chatBoxValue();
             postPayload(payload);
+        }
+
+        var RETURN = 13;
+        $chatBox.on("keyup", function (e) {
+            if (e.keyCode == RETURN) { sendPayload(); }
         });
+
+        $chatButton.on("click", function (e) { sendPayload(); });
     };
 
     var init = function (chatMessages, chatBox, chatButton) {
