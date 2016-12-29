@@ -2,7 +2,12 @@
 
 var ChatController = (function () {
 
-    var userId = "9a51f1a0-29c4-4793-bd13-8d9d496cefe0";
+    function simpleUuid() {
+        function s4() { return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1); }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+    }
+
+    var userId = simpleUuid(); // would in reality store locally, or in a cookie
 
     var ChatView = (function () {
 
@@ -59,7 +64,7 @@ var ChatController = (function () {
     }
 
     var attachControllerServerSideEventToMessageBox = function () {
-        var client = new EventSource("http://localhost:8081/chat/receive/c3743620-cc30-11e6-9d9d-cec0c932ce01");
+        var client = new EventSource("http://localhost:8081/chat/receive/c3743620-cc30-11e6-9d9d-cec0c932ce01"); // needs to move to a reverse proxy
         client.onopen = function (event) {
             console.log(event);
         };
@@ -73,7 +78,7 @@ var ChatController = (function () {
     };
 
     function postPayload(payload) {
-        $.post("http://localhost:8080/chat/publish/c3743620-cc30-11e6-9d9d-cec0c932ce01/" + userId, payload)
+        $.post("http://localhost:8080/chat/publish/c3743620-cc30-11e6-9d9d-cec0c932ce01/" + userId, payload) // needs to move to a reverse proxy
             .done(function () {
                 console.log("success");
                 ChatView.clearChatBox();

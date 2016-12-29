@@ -2,23 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c10439-77b0-4621-b653-1f0e26ea585c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/handler/Chat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/ChatServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/handler/ChatTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/PublishChat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/AppTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/surefire-reports/TEST-de.affinitas.chat.ChatServiceTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/surefire-reports/TEST-de.affinitas.chat.handler.ChatTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/surefire-reports/de.affinitas.chat.ChatServiceTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/surefire-reports/de.affinitas.chat.handler.ChatTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_service/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_client_demo/run.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/ChatConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/listener/BroadcastChatListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/Broadcaster$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/Broadcaster$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/Broadcaster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/ConnectionNotEstablished.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceivedCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueueRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueueToManyStreamsRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueuesRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/Receiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/serversentevent/ServerSentEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/serversentevent/ServerSentEventStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/model/Visitable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/model/Visitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder$BuilderHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder$ServletsBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/SSEConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/ScheduledRegistryCleaner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/ServerSentEventConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/ServerSentEventService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/SystemExitCodes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/handler/ServerSentEventServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/path/PathParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/path/PathResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/path/PathValues.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/accept_message_service.iml" afterPath="$PROJECT_DIR$/chat_service/chat_service.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/pom.xml" afterPath="$PROJECT_DIR$/chat_service/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatConfig.java" afterPath="$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/ChatConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatService.java" afterPath="$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/ChatService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/handler/Chat.java" afterPath="$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/handler/Chat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java" afterPath="$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/messagequeue/Broadcaster.java" afterPath="$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/messagequeue/Broadcaster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/messagequeue/ConnectionNotEstablished.java" afterPath="$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/messagequeue/ConnectionNotEstablished.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/ChatServiceTest.java" afterPath="$PROJECT_DIR$/chat_service/src/test/java/de/affinitas/chat/ChatServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/handler/ChatTest.java" afterPath="$PROJECT_DIR$/chat_service/src/test/java/de/affinitas/chat/handler/ChatTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/broadcast_message_sse_app.iml" afterPath="$PROJECT_DIR$/chat_broadcast_sse/chat_broadcast_sse.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/pom.xml" afterPath="$PROJECT_DIR$/chat_broadcast_sse/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/MQTTConnection.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MQTTConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/MessageReceivedCallback.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MessageReceivedCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/MessageReceiver.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MessageReceiver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueueRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueueRegistry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueueToManyStreamsRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueueToManyStreamsRegistry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueuesRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesRegistry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/Receiver.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/Receiver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/serversentevent/ServerSentEvent.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/serversentevent/ServerSentEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/serversentevent/ServerSentEventStream.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/serversentevent/ServerSentEventStream.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/model/Visitable.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/model/Visitable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/model/Visitor.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/model/Visitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/HttpServerBuilder.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/HttpServerBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/SSEConfig.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/SSEConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/ScheduledRegistryCleaner.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ScheduledRegistryCleaner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/ServerSentEventConfig.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ServerSentEventConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/ServerSentEventService.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ServerSentEventService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/SystemExitCodes.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/SystemExitCodes.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/handler/ServerSentEventServlet.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/handler/ServerSentEventServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/path/PathParser.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/path/PathParser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/path/PathResolver.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/path/PathResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/path/PathValues.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/path/PathValues.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_client_demo/js/chat.js" afterPath="$PROJECT_DIR$/chat_client_demo/js/chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="fc65570e-9ab3-49f6-a66d-93a6963b850b" name="New changelist" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/App.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/PublishChat.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/test-classes/de/affinitas/chat/AppTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java" afterPath="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accept_message_service/accept_message_service.iml" afterPath="$PROJECT_DIR$/accept_message_service/accept_message_service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accept_message_service/pom.xml" afterPath="$PROJECT_DIR$/accept_message_service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chat_services.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,64 +126,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Chat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/handler/Chat.java">
+      <file leaf-file-name="ChatService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/ChatService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BroadcastChatListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/handler/ChatTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accept_message_service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.17353724">
-                <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -109,27 +140,53 @@
         <entry file="file://$PROJECT_DIR$/chat_client_demo/js/chat.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+              <caret line="80" column="144" selection-start-line="80" selection-start-column="144" selection-end-line="80" selection-end-column="144" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10710988">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatService.java">
+      <file leaf-file-name="ServerSentEventService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ServerSentEventService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+              <caret line="31" column="131" selection-start-line="31" selection-start-column="131" selection-end-line="31" selection-end-column="131" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerSentEventServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/handler/ServerSentEventServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.67486703">
+                <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat_service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -138,18 +195,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat_client_demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-1.5263158">
               <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_client_demo/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -188,7 +235,6 @@
         <option value="$PROJECT_DIR$/message_queue/install.yml" />
         <option value="$PROJECT_DIR$/message_queue/roles/message_queue/defaults/main.yml" />
         <option value="$PROJECT_DIR$/message_queue/uat/hosts.ini" />
-        <option value="$PROJECT_DIR$/broadcast_message_sse_app/pom.xml" />
         <option value="$PROJECT_DIR$/message_queue/README.md" />
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/PathResolver.java" />
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/SystemExitCodes.java" />
@@ -216,15 +262,17 @@
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java" />
         <option value="$PROJECT_DIR$/chat_client_demo/index.html" />
         <option value="$PROJECT_DIR$/chat_client_demo/css/style.css" />
-        <option value="$PROJECT_DIR$/chat_client_demo/js/chat.js" />
         <option value="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/App.java" />
         <option value="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatService.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/accept_message_service/pom.xml" />
         <option value="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/handler/Chat.java" />
         <option value="$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/handler/ChatTest.java" />
         <option value="$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/accept_message_service/pom.xml" />
+        <option value="$PROJECT_DIR$/broadcast_message_sse_app/pom.xml" />
+        <option value="$PROJECT_DIR$/chat_client_demo/js/chat.js" />
+        <option value="$PROJECT_DIR$/chat_client_demo/run.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -308,7 +356,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="broadcast_message_sse_app" />
+              <option name="myItemId" value="chat_service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,7 +370,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="broadcast_message_sse_app" />
+              <option name="myItemId" value="chat_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_client_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_broadcast_sse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_broadcast_sse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -340,115 +464,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="accept_message_service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accept_message_service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accept_message_service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accept_message_service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accept_message_service" />
+              <option name="myItemId" value="chat_broadcast_sse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -468,7 +484,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="listener" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,7 +498,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="accept_message_service" />
+              <option name="myItemId" value="chat_broadcast_sse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -499,10 +515,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1205,16 +1217,24 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d1c10439-77b0-4621-b653-1f0e26ea585c" name="Default" comment="" />
+      <changelist id="fc65570e-9ab3-49f6-a66d-93a6963b850b" name="New changelist" comment="" />
       <created>1482894131915</created>
       <option name="number" value="Default" />
       <updated>1482894131915</updated>
       <workItem from="1482894135744" duration="19579000" />
-      <workItem from="1482977975482" duration="3217000" />
+      <workItem from="1482977975482" duration="5484000" />
     </task>
+    <task id="LOCAL-00001" summary="missed a few files">
+      <created>1482981222326</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1482981222326</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22796000" />
+    <option name="totallyTimeSpent" value="25063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="101" y="36" width="2779" height="1764" extended-state="6" />
@@ -1251,6 +1271,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="missed a few files" />
+    <option name="LAST_COMMIT_MESSAGE" value="missed a few files" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -1262,13 +1286,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/message_queue/_/message.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7631579">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/message_queue/_/pretty_print_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1401,35 +1418,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/path/PathResolver.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/path/PathResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/SystemExitCodes.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/SystemExitCodes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/path/PathValues.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/path/PathValues.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/model/Visitor.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/model/Visitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatConfig.java">
+    <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/ChatConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="10" selection-end-column="52" />
@@ -1443,24 +1460,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/MessageReceiver.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MessageReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/path/PathParser.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/path/PathParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.113940164">
           <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/ScheduledRegistryCleaner.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ScheduledRegistryCleaner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29535326">
           <caret line="23" column="82" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1471,21 +1490,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/serversentevent/ServerSentEventStream.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/serversentevent/ServerSentEventStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2768937">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueueToManyStreamsRegistry.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueueToManyStreamsRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6677276">
           <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueueRegistry.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueueRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14767663">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
@@ -1496,25 +1516,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="20.96923">
           <caret line="752" column="54" selection-start-line="752" selection-start-column="54" selection-end-line="752" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/ServerSentEventConfig.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ServerSentEventConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4799491">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/messagequeue/Broadcaster.java">
+    <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/messagequeue/Broadcaster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8122215">
           <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
@@ -1522,22 +1537,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/SSEConfig.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/SSEConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/ServerSentEventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="127" selection-start-line="31" selection-start-column="127" selection-end-line="31" selection-end-column="127" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueuesRegistry.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
@@ -1547,7 +1555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java">
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
@@ -1559,14 +1567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/de/affinitas/chat/service/handler/ServerSentEventServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat_client_demo/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1575,53 +1575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat_client_demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_client_demo/js/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/ChatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.17353724">
-            <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/handler/Chat.java">
+    <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/handler/Chat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
@@ -1631,7 +1585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/src/test/java/de/affinitas/chat/handler/ChatTest.java">
+    <entry file="file://$PROJECT_DIR$/chat_service/src/test/java/de/affinitas/chat/handler/ChatTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
@@ -1643,7 +1597,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accept_message_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java">
+    <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/listener/BroadcastChatListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
@@ -1656,6 +1610,84 @@
         <state vertical-scroll-proportion="0.10710988">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/ChatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ServerSentEventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="131" selection-start-line="31" selection-start-column="131" selection-end-line="31" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/handler/ServerSentEventServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.073838316">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_client_demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5263158">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_client_demo/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036919158">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_client_demo/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="144" selection-start-line="80" selection-start-column="144" selection-end-line="80" selection-end-column="144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.67486703">
+            <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/accept_message_service/accept_message_service.iml" filepath="$PROJECT_DIR$/accept_message_service/accept_message_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/broadcast_message_sse_app/broadcast_message_sse_app.iml" filepath="$PROJECT_DIR$/broadcast_message_sse_app/broadcast_message_sse_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chat_broadcast_sse/chat_broadcast_sse.iml" filepath="$PROJECT_DIR$/chat_broadcast_sse/chat_broadcast_sse.iml" />
       <module fileurl="file://$PROJECT_DIR$/chat_client_demo/chat_client_demo.iml" filepath="$PROJECT_DIR$/chat_client_demo/chat_client_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chat_service/chat_service.iml" filepath="$PROJECT_DIR$/chat_service/chat_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/chat_services.iml" filepath="$PROJECT_DIR$/chat_services.iml" />
       <module fileurl="file://$PROJECT_DIR$/message_queue/message_queue.iml" filepath="$PROJECT_DIR$/message_queue/message_queue.iml" />
     </modules>
