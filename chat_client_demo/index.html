@@ -5,12 +5,15 @@
     <script src="js/chat.js"></script>
     <script>
         window.onload = function () {
-            ChatController.init("chat_messages", "chat_box");
+            ChatController.init("chat_messages", "chat_box", "chat_button");
         };
     </script>
 </head>
 <body>
 <div id="chat_messages" class="chat_messages"></div>
-<input id="chat_box" class="chat_box" type="text" title="Write message" placeholder="Message"/>
+<div id="chat_send" class="chat_send">
+    <input id="chat_box" class="chat_box" type="text" title="Write message" placeholder="Message"/>
+    <button id="chat_button" class="chat_button">Send</button>
+</div>
 </body>
 </html>

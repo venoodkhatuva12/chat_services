@@ -25,7 +25,6 @@ public final class Broadcaster {
     private final AtomicBoolean connected = new AtomicBoolean(false);
     private final AtomicBoolean connecting = new AtomicBoolean(false);
     private final ExecutorService executorService;
-    private AtomicInteger retryCount = new AtomicInteger(0);
 
     public Broadcaster(UUID id, ChatConfig config) {
         String topicName = id.toString();
@@ -58,25 +57,27 @@ public final class Broadcaster {
     }
 
     public void broadcast(String message) throws ConnectionNotEstablished {
+        broadcast(message, 0);
+    }
+
+    private void broadcast(String message, int retryCount) throws ConnectionNotEstablished {
         if (connected.get()) {
             System.out.println("Publishing to " + destination + ": " + message);
             connection.publish(destination, message.getBytes(Charset.forName("UTF8")), QoS.EXACTLY_ONCE, false, null);
         } else {
-            queue(message);
+            queue(message, retryCount);
         }
     }
 
-    private void queue(String message) throws ConnectionNotEstablished {
+    private void queue(String message, final int retryCount) throws ConnectionNotEstablished {
         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
         executorService.schedule(() -> {
             try {
-                broadcast(message);
+                broadcast(message, (retryCount+1));
             } catch (ConnectionNotEstablished e) {
-                if (retryCount.get() > 5) {
+                if (retryCount > 5) {
                     executorService.shutdown();
                     throw new ConnectionNotEstablished();
-                } else {
-                    retryCount.incrementAndGet();
                 }
             }
         }, 1, SECONDS);

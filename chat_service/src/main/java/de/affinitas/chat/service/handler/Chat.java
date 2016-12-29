@@ -25,11 +25,12 @@ public class Chat {
             String messageId = UUID.randomUUID().toString();
             String toBroadcast = formatMessage(userId.toString(), messageId, message);
             broadcast(channelId, toBroadcast);
-            return Response.ok().build();
+            //TODO: remove the live cross scripting attack potential - need to implement reverse proxy
+            return Response.ok().header("Access-Control-Allow-Origin", "*").build();
         } catch (IllegalArgumentException e) {
-            return Response.status(Response.Status.BAD_REQUEST).build();
+            return Response.status(Response.Status.BAD_REQUEST).header("Access-Control-Allow-Origin", "*").build();
         } catch (ConnectionNotEstablished e) {
-            return Response.status(Response.Status.ACCEPTED).build();
+            return Response.status(Response.Status.ACCEPTED).header("Access-Control-Allow-Origin", "*").build();
         }
     }
 

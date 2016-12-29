@@ -11,9 +11,12 @@ var ChatController = (function () {
 
     var ChatView = (function () {
 
-        var $chatMessages, $chatBox;
+        var $chatMessages, $chatBox, $chatButton;
 
         function paintMessage(message, className) {
+
+            var currentlyScrolledToTheBottom = isViewCurrentlyScrolledToTheBottom();
+
             var id = message.id;
             if ($("_" + id).length === 0) {
                 var $chatBubble = $("<div>");
@@ -24,7 +27,22 @@ var ChatController = (function () {
                 $chatBubble.addClass(className);
                 $chatBubble.append($chatText);
                 $chatMessages.append($chatBubble);
+
+                if (currentlyScrolledToTheBottom) {
+                    jumpToPageBottom();
+                }
+
             }
+        }
+
+        function isViewCurrentlyScrolledToTheBottom() {
+            var currentPanelBottom = Math.round($(window).scrollTop() + $(window).height());
+            var currentHeight = Math.round($(document).height());
+            return Math.abs(currentHeight - currentPanelBottom) < 10;
+        }
+
+        function jumpToPageBottom() {
+            $('html, body').scrollTop( $(document).height());
         }
 
         function clearChatBox() {
@@ -32,24 +50,30 @@ var ChatController = (function () {
         }
 
         function paintMyMessage(message) {
-            paintMessage(message, "tri-right right-in right-align");
+            paintMessage(message, "yours");
         }
 
         function paintOtherMessage(message) {
-            paintMessage(message, "tri-left left-in left-align");
+            paintMessage(message, "theirs");
         }
 
-        var init = function (chatMessages, chatBox) {
+        var init = function (chatMessages, chatBox, chatButton) {
             $chatMessages = $("#" + chatMessages);
             $chatBox = $("#" + chatBox);
-            attachControllerEventToInput($chatBox);
+            $chatButton = $("#" + chatButton);
+            attachControllerEventToInput($chatButton);
         };
+
+        function chatBoxValue() {
+            return $chatBox.val();
+        }
 
         return {
             "init": init,
             "clearChatBox": clearChatBox,
             "paintMyMessage": paintMyMessage,
-            "paintOtherMessage": paintOtherMessage
+            "paintOtherMessage": paintOtherMessage,
+            "chatBoxValue": chatBoxValue
         };
     })();
 
@@ -64,7 +88,7 @@ var ChatController = (function () {
     }
 
     var attachControllerServerSideEventToMessageBox = function () {
-        var client = new EventSource("http://localhost:8081/chat/receive/c3743620-cc30-11e6-9d9d-cec0c932ce01"); // needs to move to a reverse proxy
+        var client = new EventSource("http://"+document.location.hostname+":8081/chat/receive/c3743620-cc30-11e6-9d9d-cec0c932ce01"); // TODO: needs to move to a reverse proxy
         client.onopen = function (event) {
             console.log(event);
         };
@@ -78,7 +102,7 @@ var ChatController = (function () {
     };
 
     function postPayload(payload) {
-        $.post("http://localhost:8080/chat/publish/c3743620-cc30-11e6-9d9d-cec0c932ce01/" + userId, payload) // needs to move to a reverse proxy
+        $.post("http://"+document.location.hostname+":8080/chat/publish/c3743620-cc30-11e6-9d9d-cec0c932ce01/" + userId, payload)// TODO: needs to move to a reverse proxy
             .done(function () {
                 console.log("success");
                 ChatView.clearChatBox();
@@ -91,18 +115,15 @@ var ChatController = (function () {
             });
     }
 
-    var attachControllerEventToInput = function ($chatBox) {
-        var ENTER = 13;
-        $chatBox.on("keyup", function (e) {
-            if (e.keyCode == ENTER) {
-                var payload = $chatBox.val();
-                postPayload(payload);
-            }
+    var attachControllerEventToInput = function ($chatButton) {
+        $chatButton.on("click", function (e) {
+            var payload = ChatView.chatBoxValue();
+            postPayload(payload);
         });
     };
 
-    var init = function (chatMessages, chatBox) {
-        ChatView.init(chatMessages, chatBox);
+    var init = function (chatMessages, chatBox, chatButton) {
+        ChatView.init(chatMessages, chatBox, chatButton);
         attachControllerServerSideEventToMessageBox();
     };
 
