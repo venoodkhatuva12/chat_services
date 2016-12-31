@@ -2,57 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c10439-77b0-4621-b653-1f0e26ea585c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/ChatConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/PublishChat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/listener/BroadcastChatListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/Broadcaster$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/Broadcaster$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/Broadcaster.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/classes/de/affinitas/chat/messagequeue/ConnectionNotEstablished.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accept_message_service/target/test-classes/de/affinitas/chat/AppTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$1$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MQTTConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceivedCallback.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$1$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/MessageReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueueRegistry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueueToManyStreamsRegistry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueuesRegistry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/Receiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/serversentevent/ServerSentEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/communications/serversentevent/ServerSentEventStream.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/model/Visitable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/model/Visitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder$BuilderHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder$ServletsBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/HttpServerBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/SSEConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/ScheduledRegistryCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/ServerSentEventConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/ServerSentEventService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/SystemExitCodes.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/handler/ServerSentEventServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/path/PathParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/path/PathResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/broadcast_message_sse_app/target/classes/de/affinitas/chat/service/path/PathValues.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/message_queue/defaults/hidden.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message_queue/README.md" afterPath="$PROJECT_DIR$/message_queue/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message_queue/install.yml" afterPath="$PROJECT_DIR$/message_queue/install.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message_queue/roles/keystore/tasks/main.yml" afterPath="$PROJECT_DIR$/message_queue/roles/keystore/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message_queue/roles/message_queue/tasks/main.yml" afterPath="$PROJECT_DIR$/message_queue/roles/message_queue/tasks/main.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="fc65570e-9ab3-49f6-a66d-93a6963b850b" name="New changelist" comment="" />
@@ -81,66 +33,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_client_demo/index.html">
+      <file leaf-file-name="install.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/message_queue/install.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_client_demo/js/chat.js">
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/message_queue/roles/message_queue/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_service/src/main/java/de/affinitas/chat/service/handler/Chat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8674285">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ssl.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/message_queue/defaults/ssl.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_and_groups.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/message_queue/defaults/users_and_groups.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.1966851">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,8 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/handler/StreamGameObjectsServlet.java" />
-        <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/PathValues.java" />
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/PathParser.java" />
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/handler/ServerSentEventsServlet.java" />
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/src/main/java/io/hahai/service/handler/ServerSentEventServlet.java" />
@@ -217,6 +122,8 @@
         <option value="$PROJECT_DIR$/message_queue/README.md" />
         <option value="$PROJECT_DIR$/message_queue/install.yml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/message_queue/roles/message_queue/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/message_queue/roles/keystore/tasks/main.yml" />
       </list>
     </option>
   </component>
@@ -321,7 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defaults" />
+              <option name="myItemId" value="roles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,7 +242,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chat_service" />
+              <option name="myItemId" value="message_queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message_queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,37 +268,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chat_service" />
+              <option name="myItemId" value="message_queue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
+              <option name="myItemId" value="roles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chat_service" />
+              <option name="myItemId" value="message_queue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,29 +294,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chat_service" />
+              <option name="myItemId" value="message_queue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="roles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat_client_demo" />
+              <option name="myItemId" value="message_queue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,11 +316,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chat_client_demo" />
+              <option name="myItemId" value="message_queue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keystore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1027,7 +922,7 @@
       <workItem from="1482977975482" duration="5988000" />
       <workItem from="1482983971742" duration="9068000" />
       <workItem from="1483146982341" duration="2481000" />
-      <workItem from="1483150074128" duration="6518000" />
+      <workItem from="1483150074128" duration="7901000" />
     </task>
     <task id="LOCAL-00001" summary="missed a few files">
       <created>1482981222326</created>
@@ -1065,11 +960,17 @@
       <option name="project" value="LOCAL" />
       <updated>1483156047451</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixing up the client code a little">
+      <created>1483156916780</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1483156916780</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43634000" />
+    <option name="totallyTimeSpent" value="45017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
@@ -1132,20 +1033,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/message_queue/roles/message_queue/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message_queue/roles/keystore/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073838316">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/message_queue/roles/message_queue/defaults/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1472,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/message_queue/defaults/ssl.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.29392266">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
@@ -1480,7 +1367,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/message_queue/defaults/users_and_groups.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.06298342">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
@@ -1498,14 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message_queue/install.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15886287">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1533,13 +1412,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8674285">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39085713">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message_queue/install.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message_queue/roles/keystore/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2519337">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message_queue/roles/message_queue/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1966851">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

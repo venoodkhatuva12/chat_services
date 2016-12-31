@@ -54,3 +54,4 @@
   become: true
   become_user: "{{ app_user }}"
   command: /opt/affinitas_chat/apollomq_1.7.1/chat.elitesingles.com/bin/apollo-broker-service start
+

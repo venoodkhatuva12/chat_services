@@ -10,13 +10,13 @@ But there are a number of issues currently:
  - No much-needed load balancing
  - No reverse proxy for the services
     - Thus the Access-Control-Allow-Origin: * header is set for local testing on each service, and the index.html in the chat_client_demo module has ports hardcoded.
- - the message queue isn't really setup for a production release (passwords, live SSL certs needed etc)
+ - The message queue isn't really setup for a production release (passwords, live SSL certs needed etc)
     - also in the ansible config, the SSL certs are being checked in for the message queue
  - Config is hardcoded for both services.
- - no proper logging (only sysout-ing right now)
- - monitoring not even been thought about
+ - No proper logging (only sysout-ing right now)
+ - Monitoring not even been thought about
  - Tests are minimal
- - no user login currently integrated (deferred till later)
+ - No user login currently integrated (deferred till later)
 And a few more things in there.
 
 
@@ -41,18 +41,19 @@ One service currently accepts a message, and the other broadcasts it to whatever
 
 Chat Service
 ------------
-Very simply, it takes a message from the user via a restful interface, and pushes it onto a queue, which uses MQTT protocol (a lightweight pub-sub queue)
+Very simply, it takes a message from the user via a restful interface, and pushes it onto a message queue.
+The queue uses MQTT protocol (a lightweight pub-sub queue - like a topic)
 There are plans later to add a "history" feature to the ChatService so the client can see the chat history, which will require adding a datastore of some description.
 
 
 Chat Broadcast SSE
 ------------------
-This service accepts a connection, via GET, to a particular channel.
-Behind the scenes, this then connects to the queue and begins to send _server sent events_ to all connected clients
+This service accepts a connection, via GET, to a particular message queue channel.  
+This then connects to the queue and begins to send _server sent events_ to all connected clients
 
 
-The Other Bits
-==============
+The Other Parts
+===============
 
 There are 2 more modules in the project. 
 
