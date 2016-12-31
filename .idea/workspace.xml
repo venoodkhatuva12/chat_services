@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c10439-77b0-4621-b653-1f0e26ea585c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_0_v20161208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_0_v20161208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_0_v20161208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_0_v20161208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_0_v20161208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_0_v20161208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/communications/QueueToManyStreamsRegistryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/communications/QueueToManyStreamsRegistryTwoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/ScheduledRegistryCleanerTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_aggregate_jetty_all_server_8_2_0_v20160908.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_orbit_javax_activation_1_1_0_v201105071233.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_orbit_javax_annotation_1_1_0_v201108011116.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_orbit_javax_mail_glassfish_1_4_1_v201005082020.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_orbit_javax_security_auth_message_1_0_0_v201108011116.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MQTTConnection.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ChatBroadcastSSEService.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ChatBroadcastSSEService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_service/src/test/java/de/affinitas/chat/service/handler/ChatTest.java" afterPath="$PROJECT_DIR$/chat_service/src/test/java/de/affinitas/chat/service/handler/ChatTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MessageReceiver.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/MessageReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueueToManyStreamsRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueueToManyStreamsRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/QueuesToManyStreamsRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/Receiver.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/communications/Receiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ScheduledRegistryCleaner.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/main/java/de/affinitas/chat/service/ScheduledRegistryCleaner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/chat_broadcast_sse.iml" afterPath="$PROJECT_DIR$/chat_broadcast_sse/chat_broadcast_sse.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/pom.xml" afterPath="$PROJECT_DIR$/chat_broadcast_sse/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/ScheduledRegistryCleanerTest.java" afterPath="$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/ScheduledRegistryCleanerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="fc65570e-9ab3-49f6-a66d-93a6963b850b" name="New changelist" comment="" />
@@ -61,18 +34,18 @@
       <file leaf-file-name="ScheduledRegistryCleanerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/ScheduledRegistryCleanerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40031645">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.60126585">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1369#1370#0" expanded="true" />
-                <element signature="e#1404#1405#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1515#1516#0" expanded="true" />
-                <element signature="e#1571#1572#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1689#1690#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
+                <element signature="e#1505#1506#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+                <element signature="e#1607#1608#0" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1707#1708#0" expanded="true" />
+                <element signature="e#1753#1754#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,7 +249,7 @@
       <recent name="io.hahai.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in chat_broadcast_sse">
+  <component name="RunManager" selected="JUnit.ScheduledRegistryCleanerTest.willCleanWhenNoSSEAttached">
     <configuration default="false" name="QueueToManyStreamsRegistryTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -864,8 +837,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in chat_broadcast_sse" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ScheduledRegistryCleanerTest.willCleanWhenNoSSEAttached" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ScheduledRegistryCleanerTest.willCleanWhenNoSSEAttached" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in chat_broadcast_sse" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.de.affinitas.chat.communications in chat_broadcast_sse" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.QueueToManyStreamsRegistryTwoTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.QueueToManyStreamsRegistryTwoTest.canSendToTwoStreams" />
@@ -893,7 +866,7 @@
       <workItem from="1482983971742" duration="9068000" />
       <workItem from="1483146982341" duration="2481000" />
       <workItem from="1483150074128" duration="10308000" />
-      <workItem from="1483161053622" duration="5185000" />
+      <workItem from="1483161053622" duration="5463000" />
     </task>
     <task id="LOCAL-00001" summary="missed a few files">
       <created>1482981222326</created>
@@ -943,11 +916,17 @@
       <option name="project" value="LOCAL" />
       <updated>1483158626763</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="written a couple of tests for some of the comms stuff">
+      <created>1483177441848</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1483177441848</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52609000" />
+    <option name="totallyTimeSpent" value="52887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
@@ -962,10 +941,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29229122" sideWeight="0.49870992" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29229122" sideWeight="0.49870992" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -997,7 +976,8 @@
     <MESSAGE value="renaming both modules to make responsibilities more clear" />
     <MESSAGE value="moving some packages around" />
     <MESSAGE value="fixing up the client code a little" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing up the client code a little" />
+    <MESSAGE value="written a couple of tests for some of the comms stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="written a couple of tests for some of the comms stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,6 +1176,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,18 +1384,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chat_broadcast_sse/src/test/java/de/affinitas/chat/ScheduledRegistryCleanerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40031645">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.60126585">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1571#1572#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
           </folding>
         </state>
       </provider>
