@@ -8,11 +8,11 @@ import java.util.UUID;
 public interface QueuesRegistry extends Visitable<QueueRegistry> {
 
 
-    boolean exists(UUID areaId);
+    boolean exists(UUID channelId);
 
-    QueueRegistry queueFor(UUID areaId);
+    QueueRegistry queueFor(UUID channelId);
 
-    void remove(UUID areaId);
+    void remove(UUID channelId);
 
     void accept(Visitor<QueueRegistry> scheduledCleaner);
 

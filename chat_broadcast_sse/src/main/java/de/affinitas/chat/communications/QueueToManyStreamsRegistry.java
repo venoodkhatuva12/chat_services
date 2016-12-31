@@ -8,26 +8,32 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class QueueToManyStreamsRegistry implements QueueRegistry {
 
-    private final UUID areaId;
+    private final UUID channelId;
     private final Queue<ServerSentEvent> streams;
-    private MessageReceiver receiver;
+    private final ExecutorService executorService;
+    private Receiver<String> receiver;
 
-    public QueueToManyStreamsRegistry(UUID areaId, ServerSentEventConfig config) {
-        this.areaId = areaId;
+    public QueueToManyStreamsRegistry(UUID channelId, ServerSentEventConfig config) {
+        this.channelId = channelId;
         streams = new ConcurrentLinkedQueue<>();
-        attachToQueue(areaId, config);
+        executorService = registerQueue(channelId, config);
     }
 
-    protected void attachToQueue(UUID areaId, ServerSentEventConfig config) {
-        Executors.newSingleThreadExecutor().execute(() -> {
-            receiver = new MessageReceiver(config);
-            receiver.subscribeTo(areaId, this::broadcastToAllStreams);
+    private ExecutorService registerQueue(UUID channelId, ServerSentEventConfig config) {
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        executor.execute(() -> {
+            receiver = makeMessageReceiver(config);
+            receiver.subscribeTo(channelId, this::broadcastToAllStreams);
         });
+        return executor;
     }
+
+    protected Receiver<String> makeMessageReceiver(ServerSentEventConfig config) {return new MessageReceiver(config);}
 
     private void broadcastToAllStreams(String message) {
         Iterator<ServerSentEvent> iterator = streams.iterator();
@@ -44,7 +50,7 @@ public class QueueToManyStreamsRegistry implements QueueRegistry {
 
     @Override
     public UUID getId() {
-        return areaId;
+        return channelId;
     }
 
     @Override
@@ -62,5 +68,6 @@ public class QueueToManyStreamsRegistry implements QueueRegistry {
         if(receiver!=null) {
             receiver.killConnection();
         }
+        executorService.shutdown();
     }
 }

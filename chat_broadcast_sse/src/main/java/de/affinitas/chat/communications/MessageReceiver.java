@@ -16,6 +16,8 @@ import static org.fusesource.mqtt.client.QoS.EXACTLY_ONCE;
 
 public final class MessageReceiver implements Receiver<String> {
 
+
+    //TODO: a complete mess - copy and pasted from online to get it running quickly
     private final ServerSentEventConfig config;
     private final CallbackConnection connection;
 
@@ -84,14 +86,11 @@ public final class MessageReceiver implements Receiver<String> {
         connection.resume();
         connection.connect(new Callback<Void>() {
 
-            public void onFailure(Throwable value) {
-            }
+            public void onFailure(Throwable value) { }
 
             public void onSuccess(Void value) {
                 connection.subscribe(topics, new Callback<byte[]>() {
-                    public void onSuccess(byte[] value) {
-                    }
-
+                    public void onSuccess(byte[] value) {}
                     public void onFailure(Throwable value) {
                         stderr("Subscribe failed: " + value);
                     }
@@ -110,7 +109,7 @@ public final class MessageReceiver implements Receiver<String> {
         System.err.println(x);
     }
 
-    protected void killConnection() {
+    public void killConnection() {
         connection.kill(new Callback<Void>() {
             @Override
             public void onSuccess(Void aVoid) {

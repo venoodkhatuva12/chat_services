@@ -33,8 +33,8 @@ public class ChatBroadcastSSEService {
 
     protected void startScheduledCleaner(QueuesRegistry registry) {
         Duration cleanupPeriod = Duration.of(1, MINUTES);
-        ScheduledRegistryCleaner scheduledRegistryCleaner = new ScheduledRegistryCleaner(cleanupPeriod, registry);
-        scheduledRegistryCleaner.startCleaningQueuesWithNoStreamsAttached();
+        ScheduledRegistryCleaner scheduledRegistryCleaner = new ScheduledRegistryCleaner(registry);
+        scheduledRegistryCleaner.schedule(cleanupPeriod);
     }
 
     public void start() throws Exception {

@@ -40,9 +40,9 @@ public class QueuesToManyStreamsRegistry implements QueuesRegistry {
     }
 
     @Override
-    public void accept(Visitor<QueueRegistry> scheduledCleaner) {
+    public void accept(Visitor<QueueRegistry> visitor) {
         List<QueueRegistry> values = new ArrayList<>(map.values());
-        values.forEach(scheduledCleaner::visit);
+        values.forEach(visitor::visit);
     }
 
 }

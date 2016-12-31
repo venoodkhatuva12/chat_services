@@ -11,15 +11,13 @@ import static java.util.concurrent.TimeUnit.NANOSECONDS;
 
 public class ScheduledRegistryCleaner implements Visitor<QueueRegistry> {
 
-    private final Duration cleanupDuration;
     private final QueuesRegistry queuesRegistry;
 
-    public ScheduledRegistryCleaner(Duration cleanupDuration, QueuesRegistry queuesRegistry) {
-        this.cleanupDuration = cleanupDuration;
+    public ScheduledRegistryCleaner(QueuesRegistry queuesRegistry) {
         this.queuesRegistry = queuesRegistry;
     }
 
-    void startCleaningQueuesWithNoStreamsAttached() {
+    public void schedule(Duration cleanupDuration) {
         long cleanupDurationNano = cleanupDuration.toNanos();
         newSingleThreadScheduledExecutor().scheduleAtFixedRate(this::visitQueueRegistry, cleanupDurationNano, cleanupDurationNano, NANOSECONDS);
     }

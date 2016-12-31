@@ -38,7 +38,7 @@ public class ChatTest {
 
     @Test
     public void unsuccessfulPostChannelNotUUID() {
-        Chat unit = new Chat() { @Override protected void broadcast(UUID channelId, String toBroadcast) { } };
+        Chat unit = new Chat() { @Override protected void broadcast(UUID channelId, String toBroadcast) { /* override actually sending */ } };
         String channelId = "im not a UUID";
         String userId = UUID.randomUUID().toString();
         Response reply = unit.publishChat(channelId, userId, "hello world");
@@ -47,7 +47,7 @@ public class ChatTest {
 
     @Test
     public void unsuccessfulPostUserIdNotUUID() {
-        Chat unit = new Chat() { @Override protected void broadcast(UUID channelId, String toBroadcast) { } };
+        Chat unit = new Chat() { @Override protected void broadcast(UUID channelId, String toBroadcast) { /* override actually sending */ } };
         String channelId = UUID.randomUUID().toString();
         String userId = "im not a UUID";
         Response reply = unit.publishChat(channelId, userId, "hello world");
@@ -72,7 +72,7 @@ public class ChatTest {
             @Override
             public boolean matchesSafely(String s) {
                 try {
-                    UUID ignored = UUID.fromString(s);
+                    UUID ifItDoesntThrowItsAGoodUUID = UUID.fromString(s);
                     return true;
                 } catch (IllegalArgumentException e) {
                     return false;
@@ -80,9 +80,7 @@ public class ChatTest {
             }
 
             @Override
-            public void describeTo(Description description) {
-
-            }
+            public void describeTo(Description description) {  }
         };
     }
 
