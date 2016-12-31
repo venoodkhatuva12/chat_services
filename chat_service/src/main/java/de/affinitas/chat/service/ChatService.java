@@ -2,33 +2,38 @@ package de.affinitas.chat.service;
 
 import de.affinitas.chat.service.handler.Chat;
 import de.affinitas.chat.service.listener.BroadcastChatListener;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHolder;
 import org.glassfish.jersey.servlet.ServletContainer;
+import org.glassfish.jersey.servlet.ServletProperties;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.embedded.ServletRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.ServletContextListener;
+
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
 public class ChatService {
 
-    public static void main(String[] args) throws Exception {
-        //TODO: add monitoring to app
-        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-        context.setContextPath("/");
-        context.addEventListener(new BroadcastChatListener());
-
-        Server server = new Server(8080);
-        server.setHandler(context);
-
-        ServletHolder jerseyServlet = context.addServlet(ServletContainer.class, "/*");
-        jerseyServlet.setInitOrder(0);
-
-        // Tells the Jersey Servlet which REST service/class to load.
-        jerseyServlet.setInitParameter("jersey.config.server.provider.classnames", Chat.class.getCanonicalName());
-
-        try {
-            server.start();
-            server.join();
-        } finally {
-            server.destroy();
-        }
+    public static void main(String[] args) {
+        SpringApplication.run(ChatService.class, args);
     }
+
+    @Bean public ServletRegistrationBean jerseyServlet() {
+        ServletRegistrationBean registration = new ServletRegistrationBean(new ServletContainer(), "/*");
+        registration.addInitParameter(ServletProperties.JAXRS_APPLICATION_CLASS, JerseyConfig.class.getName());
+        return registration;
+    }
+
+    @Bean public ServletContextListener listener() {
+        return new BroadcastChatListener();
+    }
+
+    @Bean public Chat chatResource() {
+        return new Chat();
+    }
+
 }

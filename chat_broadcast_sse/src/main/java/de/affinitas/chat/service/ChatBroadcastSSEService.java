@@ -1,11 +1,10 @@
 package de.affinitas.chat.service;
 
 import de.affinitas.chat.communications.QueuesRegistry;
-import de.affinitas.chat.service.handler.ServerSentEventServlet;
 import de.affinitas.chat.communications.QueuesToManyStreamsRegistry;
+import de.affinitas.chat.service.handler.ServerSentEventServlet;
 import org.eclipse.jetty.server.Server;
 
-import java.net.URI;
 import java.time.Duration;
 
 import static java.time.temporal.ChronoUnit.MINUTES;
@@ -44,11 +43,4 @@ public class ChatBroadcastSSEService {
         webServer.join();
     }
 
-    public boolean isStarted() {
-        return webServer.isStarted();
-    }
-
-    public URI uri() {
-        return webServer.getURI();
-    }
 }

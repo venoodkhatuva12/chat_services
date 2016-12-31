@@ -42,7 +42,7 @@ var ChatController = (function () {
         }
 
         function jumpToPageBottom() {
-            $('html, body').scrollTop( $(document).height());
+            $("html, body").scrollTop( $(document).height());
         }
 
         function clearChatBox() {
@@ -57,11 +57,11 @@ var ChatController = (function () {
             paintMessage(message, "theirs");
         }
 
-        var init = function (chatMessages, chatBox, chatButton) {
+        var init = function (chatMessages, chatBox, chatButton, channelId) {
             $chatMessages = $("#" + chatMessages);
             $chatBox = $("#" + chatBox);
             $chatButton = $("#" + chatButton);
-            attachControllerEventToInput($chatBox, $chatButton);
+            attachControllerEventToInput($chatBox, $chatButton, channelId);
         };
 
         function chatBoxValue() {
@@ -87,8 +87,8 @@ var ChatController = (function () {
         }
     }
 
-    var attachControllerServerSideEventToMessageBox = function () {
-        var client = new EventSource("http://"+document.location.hostname+":8081/chat/receive/c3743620-cc30-11e6-9d9d-cec0c932ce01"); // TODO: needs to move to a reverse proxy
+    var attachControllerServerSideEventToMessageBox = function (channelId) {
+        var client = new EventSource("http://"+document.location.hostname+":8081/chat/receive/"+channelId); // TODO: needs to move to a reverse proxy
         client.onopen = function (event) {
             console.log(event);
         };
@@ -100,8 +100,14 @@ var ChatController = (function () {
         return client;
     };
 
-    function postPayload(payload) {
-        $.post("http://"+document.location.hostname+":8080/chat/publish/c3743620-cc30-11e6-9d9d-cec0c932ce01/" + userId, payload)// TODO: needs to move to a reverse proxy
+    function postPayload(payload, channelId) {
+        $.ajax({
+                url : "http://"+document.location.hostname+":8080/chat/publish/"+channelId+"/" + userId,
+                type: "POST",
+                data: payload,
+                contentType: "text/plain",
+                dataType   : "text"
+            })
             .done(function () {
                 console.log("success");
                 ChatView.clearChatBox();
@@ -114,11 +120,11 @@ var ChatController = (function () {
             });
     }
 
-    var attachControllerEventToInput = function ($chatBox, $chatButton) {
+    var attachControllerEventToInput = function ($chatBox, $chatButton, channelId) {
 
         function sendPayload() {
             var payload = ChatView.chatBoxValue();
-            postPayload(payload);
+            postPayload(payload, channelId);
         }
 
         var RETURN = 13;
@@ -129,9 +135,25 @@ var ChatController = (function () {
         $chatButton.on("click", function (e) { sendPayload(); });
     };
 
+    function makeQuery(querystring) {
+        var reply = {};
+        var vars = querystring.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            reply[decodeURIComponent(pair[0])]=decodeURIComponent(pair[1]);
+        }
+        return reply;
+    }
+
+    function parseChannelIdFromPath(querystring) {
+        var query = makeQuery(querystring.substring(1));
+        return query.c;
+    }
+
     var init = function (chatMessages, chatBox, chatButton) {
-        ChatView.init(chatMessages, chatBox, chatButton);
-        attachControllerServerSideEventToMessageBox();
+        var channelId = parseChannelIdFromPath(document.location.search);
+        ChatView.init(chatMessages, chatBox, chatButton, channelId);
+        attachControllerServerSideEventToMessageBox(channelId);
     };
 
     return {

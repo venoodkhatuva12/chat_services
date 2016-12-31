@@ -8,6 +8,8 @@
       <list>
         <option value="$PROJECT_DIR$/accept_message_service/pom.xml" />
         <option value="$PROJECT_DIR$/broadcast_message_sse_app/pom.xml" />
+        <option value="$PROJECT_DIR$/chat_broadcast_sse/pom.xml" />
+        <option value="$PROJECT_DIR$/chat_service/pom.xml" />
       </list>
     </option>
   </component>

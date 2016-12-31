@@ -14,7 +14,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -84,16 +83,23 @@ public final class Broadcaster {
     }
 
     public void close() {
-        connection.kill(new Callback<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                executorService.shutdown();
-            }
+        if(connection!=null) {
+            connection.kill(new Callback<Void>() {
+                @Override
+                public void onSuccess(Void aVoid) {
+                    if(executorService!=null) {
+                        executorService.shutdown();
 
-            @Override
-            public void onFailure(Throwable throwable) {
-                executorService.shutdown();
-            }
-        });
+                    }
+                }
+
+                @Override
+                public void onFailure(Throwable throwable) {
+                    if(executorService!=null) {
+                        executorService.shutdown();
+                    }
+                }
+            });
+        }
     }
 }

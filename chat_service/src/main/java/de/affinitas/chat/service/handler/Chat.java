@@ -1,23 +1,24 @@
 package de.affinitas.chat.service.handler;
 
 import com.eclipsesource.json.JsonObject;
-import de.affinitas.chat.service.listener.BroadcastChatListener;
 import de.affinitas.chat.messagequeue.ConnectionNotEstablished;
+import de.affinitas.chat.service.listener.BroadcastChatListener;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.UUID;
+
+import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
 
 @Path("/chat/")
 public class Chat {
 
     @POST
     @Path("publish/{channel_id}/{user_id}")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(TEXT_PLAIN)
     public Response publishChat(@PathParam("channel_id") String channelIdString, @PathParam("user_id") String userIdString, String message) {
         try {
             UUID channelId = UUID.fromString(channelIdString);
@@ -26,11 +27,23 @@ public class Chat {
             String toBroadcast = formatMessage(userId.toString(), messageId, message);
             broadcast(channelId, toBroadcast);
             //TODO: remove the live cross scripting attack potential - need to implement reverse proxy
-            return Response.ok().header("Access-Control-Allow-Origin", "*").build();
+            return Response.ok()
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "POST")
+                    .allow("OPTIONS")
+                    .build();
         } catch (IllegalArgumentException e) {
-            return Response.status(Response.Status.BAD_REQUEST).header("Access-Control-Allow-Origin", "*").build();
+            return Response.status(Response.Status.BAD_REQUEST)
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "POST")
+                    .allow("OPTIONS")
+                    .build();
         } catch (ConnectionNotEstablished e) {
-            return Response.status(Response.Status.ACCEPTED).header("Access-Control-Allow-Origin", "*").build();
+            return Response.status(Response.Status.ACCEPTED)
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "POST")
+                    .allow("OPTIONS")
+                    .build();
         }
     }
 

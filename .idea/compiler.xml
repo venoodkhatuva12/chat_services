@@ -31,10 +31,26 @@
         <processorPath useClasspath="true" />
         <module name="broadcast_message_sse_app" />
       </profile>
+      <profile default="false" name="Annotation profile for chat_broadcast_sse" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="chat_broadcast_sse" />
+      </profile>
+      <profile default="false" name="Annotation profile for chat_service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="chat_service" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accept_message_service" target="1.8" />
       <module name="broadcast_message_sse_app" target="1.8" />
+      <module name="chat_broadcast_sse" target="1.8" />
+      <module name="chat_service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

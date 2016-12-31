@@ -41,6 +41,7 @@ public class ServerSentEventServlet extends HttpServlet {
         if (acceptValues.contains("text/event-stream")) {
             setResponseHeaders(response);
             UUID channelId = getChannelIdFromPath(request);
+            System.out.println("Connection request to channel: "+channelId.toString());
             QueueRegistry queueRegistry = registry.queueFor(channelId);
             Continuation continuation = makeContinuation(request, response);
             ServerSentEvent serverSentEvent = new ServerSentEventStream(continuation);

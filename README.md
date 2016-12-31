@@ -6,6 +6,7 @@ This exercise is all about finxing the coding that has been "done" but not reall
 We need to get the code to live in a healthy, repeatable way.  There are a number of issues currently:
 
  - There is no CI configured yet to build and release the software
+ - No much needed load balancing over the SSE service
  - No nginx configured yet to reverse proxy the services
     - Thus the Access-Control-Allow-Origin: * header is set for local testing on each service, and the index.html has ports hardcoded.
     - Also, the Chat Broadcast SSE will need to be load balanced (SSEs leave connections open)
@@ -63,7 +64,13 @@ cd chat_client_service
 ./run.sh
 ```
 This will run a very simple python server to serve the flat content on port 8000
+
 *Note, you need both services running for the page to work*
+
+To go to a particular channel, open 2 browser windows pointing at the following url: ```http://localhost:8000?c=c3743620-cc30-11e6-9d9d-cec0c932ce01```
+
+(Any valid UUID will currently create a new channel)
+
 
 Message Queue
 -------------
