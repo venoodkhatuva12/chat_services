@@ -82,6 +82,8 @@ This will run a very simple python server to serve the flat content on port 8000
 
 To go to a particular channel, open 2 browser windows pointing at the following url:
 
-```http://localhost:8000?c=c3743620-cc30-11e6-9d9d-cec0c932ce01```
-
+```
+http://localhost:8000?c=c3743620-cc30-11e6-9d9d-cec0c932ce01
 (Any valid UUID will currently create a new message queue in the background)
+```
+
