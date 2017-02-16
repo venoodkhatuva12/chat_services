@@ -8,7 +8,7 @@ But there are a number of issues currently:
 
  - There is no CI configured yet to build and release the software
  - No much-needed load balancing
- - No reverse proxy for the services
+ - The services are on different ports, and no reverse proxy exists for the services
     - Thus the Access-Control-Allow-Origin: * header is set for local testing on each service, and the index.html in the chat_client_demo module has ports hardcoded.
  - The message queue isn't really setup for a production release (passwords, live SSL certs needed etc)
     - also in the ansible config, the SSL certs are being checked in for the message queue
