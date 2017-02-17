@@ -49,7 +49,7 @@ There are plans later to add a "history" feature to the ChatService so the clien
 Chat Broadcast SSE
 ------------------
 This service accepts a connection, via GET, to a particular message queue channel.  
-This then connects to the queue and begins to send _server sent events_ to all connected clients
+This then holds a connection open to a queue on the backend and begins to send _server sent events_ to all connected clients
 
 
 The Other Parts
