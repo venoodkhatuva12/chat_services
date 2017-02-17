@@ -4,7 +4,7 @@ The Exercise
 ============
 This exercise is all about building a continuous deployment pipeline for the code checked into this repo, and where appropriate, fixing some code and making it ready for production.
 
-We need to get the code deployed to live in a healthy, repeatable way. 
+We need to get the code built and deployed to live in a healthy, repeatable way. 
 
 You can choose any tools you deem appropriate.  We are using the netflix stack and Jenkins for our continuous deployment stuff internally, but are open to other ways of doing stuff.
 
