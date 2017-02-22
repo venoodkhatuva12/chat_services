@@ -1,7 +1,7 @@
 
 
-The Exercise
-============
+The DevOps Exercise
+===================
 This exercise is all about building a continuous deployment pipeline for the code checked into this repo, and where appropriate, fixing some code and making it ready for production.
 
 We need to get the code built and deployed to live in a healthy, repeatable way. 
